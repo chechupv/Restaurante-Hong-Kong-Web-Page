@@ -1,32 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Restaurante Hong Kong</title>
-</head>
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Restaurante Hong Kong</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="landing-page">
+      <div class="content">
+        <header class="navigation">
+          <h1 class="site-name">Restaurante Hong Kong</h1>
+          <nav class="items">
+            <a href="#" class="nav-link">Inicio</a>
+            <a href="#menu" class="nav-link">Menú</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
+            <a href="#reservas" class="button"><span class="button-text">Reservar</span></a>
+          </nav>
+        </header>
 
-<div class="LandingPage" data-layer="Landing page">
-  <div class="Navigation" data-layer="Navigation">
-    <div class="Items" data-layer="Items">
-      <div class="Inicio" data-layer="Inicio">Inicio</div>
-      <div class="Men" data-layer="Menú">Menú</div>
-      <div class="Contacto" data-layer="Contacto">Contacto</div>
-      <div class="Button" data-layer="Button">
-        <div class="Reservar" data-layer="Reservar">Reservar</div>
+        <section class="hero">
+          <div class="hero-image" role="img" aria-label="Variedad de platos de comida china"></div>
+        </section>
+
+        <main>
+          <section class="about">
+            <h2 class="section-title">Restaurante Hong Kong</h2>
+            <p class="section-description">
+              Llevamos más de 20 años compartiendo buenos momentos con nuestros clientes. Somos un restaurante familiar
+              donde lo más importante es que te sientas como en casa, con buena comida, buen ambiente y un trato cercano.
+            </p>
+            <a href="#menu" class="button-secondary"><span class="button-text">Carta</span></a>
+          </section>
+
+          <section id="menu" class="recommended-dishes">
+            <h2 class="section-title">Platos Recomendados</h2>
+            <div class="dish-cards">
+              <article class="dish-card">
+                <div class="dish-image arroz" role="img" aria-label="Arroz Frito 3 Delicias"></div>
+                <div class="dish-details">
+                  <h3 class="dish-title">Arroz Frito 3 Delicias</h3>
+                  <p class="dish-description">
+                    Un clásico irresistible con arroz salteado, jamón cocido, tortilla y guisantes. Sabores suaves y perfectos para acompañar cualquier comida.
+                  </p>
+                </div>
+              </article>
+              <article class="dish-card">
+                <div class="dish-image rollitos" role="img" aria-label="Rollitos Primavera"></div>
+                <div class="dish-details">
+                  <h3 class="dish-title">Rollitos Primavera</h3>
+                  <p class="dish-description">
+                    Crujientes por fuera, sabrosos por dentro. Rellenos de verduras frescas y acompañados con salsa agridulce casera. Un entrante que nunca falla.
+                  </p>
+                </div>
+              </article>
+              <article class="dish-card">
+                <div class="dish-image ternera" role="img" aria-label="Ternera Con Bambú Y Setas"></div>
+                <div class="dish-details">
+                  <h3 class="dish-title">Ternera Con Bambú Y Setas</h3>
+                  <p class="dish-description">
+                    Tiernos trozos de ternera salteados con setas chinas y brotes de bambú. Un plato lleno de sabor y textura que te transporta al corazón de Asia.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section id="contacto" class="location">
+            <h2 class="section-title">Ubicación</h2>
+            <div class="address-info">
+              <h3 class="address-label">Dirección:</h3>
+              <address>
+                <a href="https://www.google.com/maps?q=Carrer+de+les+Boqueres,+129,+12550+Almassora,+Castell%C3%B3" target="_blank" rel="noopener noreferrer">
+                  Carrer de les Boqueres, 129, 12550 Almassora, Castelló
+                </a>
+              </address>
+            </div>
+            <a href="https://www.google.com/maps?q=Carrer+de+les+Boqueres,+129,+12550+Almassora,+Castell%C3%B3" target="_blank" rel="noopener noreferrer" class="map-link">
+              <img src="img/image-5.png" alt="Mapa de ubicación del restaurante" class="map-image" />
+            </a>
+          </section>
+
+          <section id="reservas" class="reservations">
+            <h2 class="section-title">Reservas</h2>
+            <div class="reservation-cards">
+              <div class="reservation-info">
+                <div class="info-image" role="img" aria-label="Ambiente del restaurante"></div>
+                <div class="info-content">
+                  <h3 class="info-title">Disfruta De La Experiencia</h3>
+                  <p class="info-description">
+                    Reserva tu mesa de forma rápida y asegura tu sitio para una comida tranquila, con buen ambiente y los sabores de siempre. ¡Te esperamos!
+                  </p>
+                </div>
+              </div>
+              <div class="reservation-action">
+                <div class="action-image" role="img" aria-label="Mesa preparada para reserva"></div>
+                <a href="#" class="button-large"><span class="button-text">Reservar</span></a>
+              </div>
+            </div>
+          </section>
+        </main>
       </div>
     </div>
-    <div class="SiteName" data-layer="Site name">Site name</div>
-  </div>
-
-  <img class="HeroImage" data-layer="Hero Image" src="https://placehold.co/1280x640" />
-
-  <div class="PlatosRecomendados" data-layer="Platos Recomendados">Platos Recomendados</div>
-
-  <!-- Aquí puedes seguir pegando más secciones como las cards, ubicación, reservas, etc. -->
-</div>
-
-</body>
+  </body>
 </html>

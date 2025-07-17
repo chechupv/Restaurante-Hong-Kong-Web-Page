@@ -1,0 +1,292 @@
+/* === Global === */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Inter", Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* === Layout === */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.content {
+  max-width: 1440px;
+  width: 100%;
+  position: relative;
+}
+
+/* === Navigation === */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+  background-color: #ffffff;
+}
+
+.site-name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.nav-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.button,
+.button-secondary,
+.button-large {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  background-color: #000000;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.button:hover,
+.button-secondary:hover,
+.button-large:hover {
+  background-color: #333333;
+}
+
+.button-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.button-secondary {
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.button-secondary .button-text {
+  color: #000000;
+}
+
+.button-secondary:hover .button-text {
+  color: #ffffff;
+}
+
+/* === Hero === */
+.hero-image {
+  width: 100%;
+  height: 640px;
+  border-radius: 8px;
+  background-image: url("img/chinese-food-pictures-3tijbabzwzxmxeq2.webp");
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+
+/* === About === */
+.about {
+  padding: 100px 80px;
+  text-align: left;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.section-description {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000bf;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+
+/* === Recommended Dishes === */
+.dish-cards {
+  display: flex;
+  gap: 32px;
+  padding: 80px;
+}
+
+.dish-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dish-image {
+  width: 100%;
+  height: 405px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+}
+
+.dish-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dish-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.dish-description {
+  font-size: 24px;
+  font-weight: 400;
+  color: #828282;
+  line-height: 36px;
+}
+
+/* Imagenes por tipo de plato */
+.dish-image.arroz {
+  background-image: url("img/presentacion-final-del-arroz-tres-delicias.jpg");
+}
+
+.dish-image.rollitos {
+  background-image: url("img/Spring-Rolls-3-1.webp");
+}
+
+.dish-image.ternera {
+  background-image: url("img/36.-Ternera-con-bambu-y-setas-chinas.webp");
+}
+
+/* === Ubicación === */
+.location {
+  padding: 80px;
+}
+
+.address-info {
+  margin-bottom: 24px;
+}
+
+.address-label {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+address a {
+  font-size: 24px;
+  font-weight: 400;
+  color: #828282;
+  text-decoration: underline;
+}
+
+.map-image {
+  width: 100%;
+  max-width: 499px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* === Reservas === */
+.reservations {
+  padding: 80px;
+}
+
+.reservation-cards {
+  display: flex;
+  gap: 32px;
+}
+
+.reservation-info,
+.reservation-action {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info-image {
+  width: 100%;
+  height: 405px;
+  border-radius: 8px;
+  background-image: url("img/image.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.action-image {
+  width: 100%;
+  height: 405px;
+  border-radius: 8px;
+  background-image: url("img/image-6.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.button-large {
+  width: 219px;
+  height: 80px;
+  margin-top: 32px;
+}
+
+.button-large .button-text {
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  font-size: 45px;
+  letter-spacing: 0px;
+  line-height: 52px;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .navigation,
+  .dish-cards,
+  .reservation-cards {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .hero-image,
+  .dish-image,
+  .info-image,
+  .action-image {
+    height: 300px;
+  }
+
+  .map-image {
+    max-width: 100%;
+  }
+}
