@@ -1,3 +1,4 @@
+
 /* === Global === */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
@@ -105,42 +106,84 @@ a {
 }
 
 /* === Hero === */
-.hero-image {
+.hero {
   width: 100%;
-  height: 640px;
-  border-radius: 8px;
-  background-image: url("img/chinese-food-pictures-3tijbabzwzxmxeq2.webp");
-  background-size: cover;
-  background-position: center;
-  margin: 0 auto;
+  padding: 80px 80px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
 }
 
-/* === About === */
-.about {
-  padding: 100px 80px;
+.hero-overlay {
+  max-width: 800px;
+  width: 100%;
   text-align: left;
+  padding: 0;
+  background: none;
 }
 
-.section-title {
+.hero-overlay .section-title {
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 700;
+  margin-bottom: 24px;
   color: #000000;
-  margin-bottom: 40px;
 }
 
-.section-description {
-  font-size: 24px;
-  font-weight: 400;
-  color: #000000bf;
-  line-height: 150%;
-  margin-bottom: 40px;
+.hero-overlay .section-description {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #333333;
+}
+
+.hero-overlay .button-secondary {
+  background-color: transparent;
+  border: 2px solid #000000;
+  padding: 14px 24px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-overlay .button-secondary:hover {
+  background-color: #000000;
+}
+
+.hero-overlay .button-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.hero-overlay .button-secondary:hover .button-text {
+  color: #ffffff;
+}
+
+/* Imagen intermedia */
+.hero-divider-image {
+  display: block;
+  margin: 48px 80px;
+  max-width: calc(100% - 160px);
+  height: auto;
+  border-radius: 8px;
 }
 
 /* === Recommended Dishes === */
+.recommended-dishes {
+  padding: 0 80px 80px;
+}
+
+.recommended-dishes .section-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #000000;
+  text-align: left;
+}
+
 .dish-cards {
   display: flex;
   gap: 32px;
-  padding: 80px;
+  flex-wrap: wrap;
 }
 
 .dish-card {
@@ -148,6 +191,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  min-width: 280px;
 }
 
 .dish-image {
@@ -279,7 +323,35 @@ address a {
     padding: 24px;
   }
 
-  .hero-image,
+  .hero {
+    padding: 48px 24px;
+  }
+
+  .hero-overlay {
+    text-align: left;
+  }
+
+  .hero-overlay .section-title {
+    font-size: 36px;
+  }
+
+  .hero-overlay .section-description {
+    font-size: 18px;
+  }
+
+  .hero-divider-image {
+    margin: 32px 24px;
+    max-width: calc(100% - 48px);
+  }
+
+  .recommended-dishes {
+    padding: 0 24px 64px;
+  }
+
+  .recommended-dishes .section-title {
+    text-align: left;
+  }
+
   .dish-image,
   .info-image,
   .action-image {
@@ -289,4 +361,55 @@ address a {
   .map-image {
     max-width: 100%;
   }
+}
+
+
+
+/* Ajustes de espaciado lateral */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
+}
+.navigation {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.hero {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.recommended-dishes {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.location {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.reservations {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Ajustes para la imagen divisoria */
+.hero-divider-image {
+  margin-left: 24px;
+  margin-right: 24px;
+  max-width: calc(100% - 48px);
+}
+
+/* Clase opcional para centrar secciones con ancho máximo */
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
